@@ -1,0 +1,20 @@
+
+class Dnevnic implements Dnevnik{
+
+	public void toWrite() {
+		
+	}
+
+	public void toDelete() {
+		
+	}
+
+	public void toUpdate() {
+		
+	}
+
+	public void toShow() {
+		
+	}
+
+}
