@@ -1,0 +1,23 @@
+import java.util.Random;
+
+
+public class gostudy {
+
+	public static void main(String[] args) {
+		
+		String[] work = {"Займись математикой ","Займись физикой ","Займись русский","Займись английским ",
+				"Иди почитай","Иди почитай книгу на английском ","Иди учи слова","Иди делай ДЗ","Займись программированием",
+				"Займис сценаристикой(т) ","Займис сценаристикой(пр)", "Займись латынью","Иди покрути обруч",
+				"Иди качай пресс","Порисуй","Отдохни","Поиграй на гитаре"};
+		int [] time = {10, 15, 30, 60, 90};
+		
+		Random ranWork = new Random(3);
+		Random ranTime = new Random(4);
+		
+		int rW = ranWork.nextInt();
+		int rT = ranTime.nextInt();
+		
+		System.out.println(rW+" "+rT);
+		//System.out.println(work[rW] +", "+time[rT]+" минут!!!");
+	}
+}

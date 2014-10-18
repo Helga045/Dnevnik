@@ -1,21 +1,21 @@
+java.lang.*;
 
 class Dnevnic implements Dnevnik{
 
-	public void toWrite() {
-		System.out.println("Введите действие");
-		
+	public void toWrite(LocalDateTime date, int time) {
+
 	}
 
 	public void toDelete() {
-		System.out.println("");
+		System.out.println("Удалить");
 	}
 
 	public void toUpdate() {
-		System.out.println("");
+		System.out.println("Изменить");
 	}
 
 	public void toShow() {
-		System.out.println("");
+		System.out.println("Показать");
 	}
 
 }
