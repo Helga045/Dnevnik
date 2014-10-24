@@ -1,9 +1,9 @@
-java.lang.*;
+import java.lang.*;
 
 class Dnevnic implements Dnevnik{
 
-	public void toWrite(LocalDateTime date, int time) {
-
+	public void toWrite() {
+		
 	}
 
 	public void toDelete() {

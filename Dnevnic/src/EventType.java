@@ -1,15 +1,26 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
-public enum EventType {
 
-	Work("Работа"),
-	Stydy("Учеба"),
-	Rest ("Отдых")
-	;
+public class EventType {
+
+	EventType(String type){
+		this.type = type;
+	}
 	
-	private String name;
+	String[] array = {"Работа",  "Отдых", "Учеба"};
+	List list = (List) Arrays.asList(array);	
+	private String type;
+	private String ty;
 	
-	private EventType(String name) {
-		this.name = name;
+	public String choiseType(){
+		Scanner in = new Scanner(System.in);
+		int i = in.nextInt();
+		
+			ty = ((java.util.List<String>) list).get(i);
+			
+		return ty;
 	}
 
 }

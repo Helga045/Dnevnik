@@ -1,0 +1,6 @@
+import java.util.List;
+
+
+class EventList {
+	List<EventList> eventList; 
+}
