@@ -1,17 +1,16 @@
 import java.lang.*;
-import java.util.UUID;
 
-class Dnevnic implements Dnevnik {
+class Dnevnic implements Dnevnik{
 
-	public void toWrite(Event event) {
+	public void toWrite() {
 		
 	}
 
-	public void toDelete(UUID id) {
+	public void toDelete() {
 		System.out.println("Удалить");
 	}
 
-	public void toUpdate(Event event) {
+	public void toUpdate() {
 		System.out.println("Изменить");
 	}
 

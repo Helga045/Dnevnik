@@ -1,8 +1,8 @@
 
 interface Dnevnik{
 
-	void toWrite(Event event);
-	void toDelete(Event event);
+	void toWrite();
+	void toDelete();
 	void toUpdate();
 	void toShow();
 	

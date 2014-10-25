@@ -4,14 +4,14 @@ import java.util.List;
 
 class DayEvent {
 
-	
-	DayEvent(EventType type, Events event, Date date){
+	List<DayEvent> dayList; 
+	DayEvent(EventType type, JEvents event, Date date){
 		this.type = type;
 		this.event = event;
 		this.date = date;
 	}
 	
 	private Date date;
-	private Events event;
+	private JEvents event;
 	private EventType type; 
 }
