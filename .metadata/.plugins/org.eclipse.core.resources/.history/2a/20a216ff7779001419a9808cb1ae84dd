@@ -1,0 +1,10 @@
+import java.util.UUID;
+
+interface Dnevnik{
+
+	void toWrite(Event event);
+	void toDelete(Event event);
+	void toUpdate(Event e1, Event e2);
+	void toShow(Event e);
+	
+}

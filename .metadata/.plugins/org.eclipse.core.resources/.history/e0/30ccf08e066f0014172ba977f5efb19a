@@ -1,0 +1,91 @@
+
+public class Scropion {
+
+}
+
+/*SCORPION
+
+[FP] - X
+[BP] - Y
+[FK] - A
+[BK] - B
+
+U = Up/Jump (прыжок)
+D = Down/Crouch (пригнуться/присесть)
+F = Forward/Toward
+B = Back/Away   
+
+
+(LB/L1) = (TG) = Tag
+(RB/R1) / (FP) + (FK) = (TH) = Throw (назад)
+F + (RB/R1) / F + (FP) + (FK) = (TH) = Throw (вперед)
+F + (FP) + (FK) = Throw Reversal
+(LT/L2) / (FK) + (BK) = (FS) = Изменить стойку
+(RT/R2) = (BL) = Block
+
+Базовые приемы
+
+ Uppercut            - Down + [BP]
+ Down Slice         - Back + [BP] (hold)
+ Blade Overhead      - Forward + [BP]
+ Heel Kick          - Back + [FK]
+ Shin Blast         - Forward + [FK]
+ Sweep               - Back + [BK]
+
+
+Fast Tag
+
+ Underworld        - [BP], [FP] + [BP], Tag
+ Soulless        - Back + [BP], Tag
+
+
+Tag Комбо
+
+ Eternal Vengeance    - [FP], [FP], Tag
+ Punishment            - [BP], [FP], Tag
+ Affliction            - Forward + [BP], [FP], Tag
+ Revenge            - [FK], [FK], Tag
+
+
+Комбо
+
+ Torment              - [FP] ([FK])
+ Damnation            - [FP], [FP], [BK]
+ Brimstone            - [BP], [FP], [BP]
+ Grave Digger         - [BP], [FP] + [BP]
+ Doom Blade           - Forward + [BP], [FP], [BK]
+ Dead End             - [FK], [FK], [BK]
+ Grievance            - Forward + [BK], [FK]
+
+
+Специальные приемы
+
+ Spear              - Back, Back, [FP]
+ Demon Fire         - Down, Back, [BP]
+ Teleport           - Down, Back, [FK]
+ Takedown           - Down, Back, [BK]
+ Air Throw          - Block (можно выполнить и в воздухе)
+
+
+Усиленные специальные приемы
+
+ Flame Spear         - Back, Back, [FP] + Block
+ Hell Fire           - Down, Back, [BP] + Block
+ Flameport           - Down, Back, [FK] + Block
+ Takeout             - Down, Back, [BK] + Block
+
+
+X-Ray Move
+
+ Scorpion Sting     - Flip Stance + Block
+
+
+Финишные приемы (фаталити)
+
+ Split Decision     - Forward, Down, Forward, [BP]
+ Nether-Gate           - Back, Forward, Back, [FK] (Sweep)
+ Stage fatality     - Forward, Up, Up, [FP]
+ Babality              - Down, Back, Forward, Down, [BP]
+ Klassic Fatality     - Down, Up, Up, [BP] (с расстояния прыжка)
+
+*/

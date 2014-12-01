@@ -1,0 +1,46 @@
+import java.lang.*;
+import java.util.Scanner;
+import java.util.UUID;
+
+class Dnevnic implements Dnevnik {
+
+	private Event e;
+	private DayEvent d;
+	private MonthEvent m;
+	private EventList l;
+	private UUID uuid;
+	
+	public void toWrite(Event event) {
+		d.add(e);
+		m.add(d);
+		l.add(m);
+		System.out.println("Вы создали запись в ежедневнике^^");
+	}
+
+	public void toDelete(Event event) {
+		e=event;
+		if(e!=null){
+		d.remove(e);
+		m.remove(d);
+		l.remove(m);
+		System.out.println("Вы удалили запись из ежедневника");
+		}
+		System.out.println("Запись действий некорректна((");
+	}
+
+	public void toUpdate(Event e1, Event e2) {
+		if(e1!=null & e2!=null){
+		uuid=e1.getID();
+		e2.setID(uuid);
+		d.update(e1, e2);
+		m.update(e1, e2);
+		l.update(e1, e2);
+		System.out.println("Вы изменили запись в ежедневнике");}
+		else System.out.println("Запись действий некорректна(");
+	}
+	
+	public void toShow(Event e){
+		System.out.println("Тип: "+e.getEventType()+"/nВркмяпровождение: "+e.getEvent()+
+				"/nДата"+e.getDate());
+	}
+}

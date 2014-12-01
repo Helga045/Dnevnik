@@ -1,0 +1,20 @@
+
+public class GP {
+
+	static public Buton x = new Buton("X", 10, 10);
+	Buton y = new Buton("Y", 10, 10);
+	Buton a = new Buton("A", 10, 10);
+	Buton b = new Buton("B", 10, 10);
+	
+	Buton up = new Buton("Up", 10, 10);
+	Buton down = new Buton("Down", 10, 10);
+	Buton forward = new Buton("Forward", 10, 10);
+	Buton back = new Buton("Back", 10, 10);
+	
+	Buton lb = new Buton("LB", 10, 10);
+	Buton l1 = new Buton("L1", 10, 10);
+	Buton rb = new Buton("RB", 10, 10);
+	Buton r1 = new Buton("R1", 10, 10);
+	
+	public Buton [] button = {x,y,a,b,up,down,forward,back,lb,l1,rb,r1};
+}

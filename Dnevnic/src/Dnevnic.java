@@ -1,22 +1,54 @@
 import java.lang.*;
+import java.util.Scanner;
 import java.util.UUID;
 
 class Dnevnic implements Dnevnik {
-
-	public void toWrite(Event event) {
+	
+	Dnevnic(){
 		
 	}
 
-	public void toDelete(UUID id) {
-		System.out.println("Удалить");
+	private Event e1, e2;
+	private DayEvent d;
+	private MonthEvent m;
+	private EventList l;
+	private UUID uuid;
+	
+	public void toWrite(Event event) {
+		e1=event;
+		d.add(e1);
+		m.add(d);
+		l.add(m);
+		System.out.println("Вы создали запись в ежедневнике^^");
 	}
 
-	public void toUpdate(Event event) {
-		System.out.println("Изменить");
+	public void toDelete(Event event) {
+		e1=event;
+		if(e1!=null){
+		d.remove(e1);
+		m.remove(d);
+		l.remove(m);
+		System.out.println("Вы удалили запись из ежедневника");
+		}
+		System.out.println("Запись действий некорректна((");
 	}
 
-	public void toShow() {
-		System.out.println("Показать");
+	public void toUpdate(Event eventR, Event eventA) {
+		e1=eventR;
+		e2=eventA;
+		if(e1!=null & e2!=null){
+		uuid=e1.getID();
+		e2.setID(uuid);
+		d.update(e1, e2);
+		m.update(e1, e2);
+		l.update(e1, e2);
+		System.out.println("Вы изменили запись в ежедневнике");}
+		else System.out.println("Запись действий некорректна(");
 	}
-
+	
+	public void toShow(Event event){
+		e1=event;
+		System.out.println("Тип: "+e1.getEventType()+"/nВркмяпровождение: "+e1.getEvent()+
+				"/nДата"+e1.getDate());
+	}
 }

@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
+
+class DayEvent {
+
+	List<Event> eventList = new ArrayList<Event>(); 
+	
+	DayEvent(){	}
+	
+	public void add(Event event) {
+		eventList.add(event);
+	}
+
+	public void remove(Event event){
+		eventList.remove(event);
+	}
+	
+	public void update(Event e){
+		for (Event even : eventList) {
+			if (even.equals(e)) {
+				
+			}
+		}
+		eventList.remove(e);
+		eventList.add(e);
+	}	
+	//private UUID id = UUID.randomUUID();
+}

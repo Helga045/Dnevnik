@@ -1,0 +1,14 @@
+import java.util.UUID;
+
+public class Project {
+
+	public static void main(String[] args) {
+
+		Dnevnic dn = new Dnevnic();
+		Event rest = new Event(id = UUID.randomUUID(), EventType.Rest,"־עהûץ", 10, 11, 2007);
+		dn.toWrite(rest);
+		uuid = rest.getID();
+		dn.toDelete(uuid);
+	}
+	private static UUID id, uuid;
+}

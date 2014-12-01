@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+class EventList {
+	
+	List<MonthEvent> eventList = new ArrayList<MonthEvent>();; 
+	
+	EventList(){}
+	
+	public void add(MonthEvent monthEvent) {
+		eventList.add(monthEvent);
+		System.out.println("Добавлена новая запись");
+	}
+	
+	public void remove(MonthEvent monthEvent) {
+		eventList.remove(monthEvent);
+		}
+
+		public void update(MonthEvent e1, MonthEvent e2){
+		eventList.remove(e1);
+		eventList.add(e2);
+		}
+//	public void update(MonthEvent monthEvent) {
+//		if (dayList == null) {
+//			dayList = new ArrayList<MonthEvent>();
+//		}
+//		dayList.remove(monthEvent);
+//		dayList.add(monthEvent);
+//	}
+}

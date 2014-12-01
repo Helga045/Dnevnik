@@ -1,0 +1,35 @@
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Buton {
+
+	//в конструктор добавить фигуру, х у д ш, цвет
+	Buton(String button, int x, int y){
+
+		this.button=button;
+		this.x=x;
+		this.y=y;
+		
+	}
+	
+	public void pressed(){
+		
+	}
+	
+	public void released(){
+		
+	}
+	public String getButton(){
+		return button;
+	}
+	
+	public void paint(Graphics g) {
+	       g.setColor(Color.pink); 
+	       g.fillOval(x, y, 300, 250); 
+	   }
+//	public void 
+	
+	private String button;
+	private int x,y;
+}
