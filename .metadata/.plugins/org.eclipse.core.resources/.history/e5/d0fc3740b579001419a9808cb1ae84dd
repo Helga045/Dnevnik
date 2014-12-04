@@ -3,25 +3,29 @@ import java.util.Scanner;
 import java.util.UUID;
 
 class Dnevnic implements Dnevnik {
+	
+	Dnevnic(){
+		
+	}
 
-	private Event e;
+	private Event e1, e2;
 	private DayEvent d;
 	private MonthEvent m;
 	private EventList l;
 	private UUID uuid;
 	
 	public void toWrite(Event event) {
-		e=event;
-		d.add(e);
+		e1=event;
+		d.add(e1);
 		m.add(d);
 		l.add(m);
 		System.out.println("Вы создали запись в ежедневнике^^");
 	}
 
 	public void toDelete(Event event) {
-		e=event;
-		if(e!=null){
-		d.remove(e);
+		e1=event;
+		if(e1!=null){
+		d.remove(e1);
 		m.remove(d);
 		l.remove(m);
 		System.out.println("Вы удалили запись из ежедневника");
@@ -29,7 +33,9 @@ class Dnevnic implements Dnevnik {
 		System.out.println("Запись действий некорректна((");
 	}
 
-	public void toUpdate(Event e1, Event e2) {
+	public void toUpdate(Event eventR, Event eventA) {
+		e1=eventR;
+		e2=eventA;
 		if(e1!=null & e2!=null){
 		uuid=e1.getID();
 		e2.setID(uuid);
@@ -40,8 +46,9 @@ class Dnevnic implements Dnevnik {
 		else System.out.println("Запись действий некорректна(");
 	}
 	
-	public void toShow(Event e){
-		System.out.println("Тип: "+e.getEventType()+"/nВркмяпровождение: "+e.getEvent()+
-				"/nДата"+e.getDate());
+	public void toShow(Event event){
+		e1=event;
+		System.out.println("Тип: "+e1.getEventType()+"/nВркмяпровождение: "+e1.getEvent()+
+				"/nДата"+e1.getDate());
 	}
 }

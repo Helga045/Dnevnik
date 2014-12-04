@@ -26,19 +26,6 @@ class EventList {
 		System.out.println("Запись удалена");
 		}
 		}
-	
-//		public void update(Event eventR, Event eventA){
-//		e1=eventR;
-//		e2=eventA;
-//		if (monthList == null) {
-//		System.out.println("Ежедневник пуст");
-//		}
-//		else {
-//		monthList.remove(e1);
-//		monthList.add(e2);
-//		System.out.println("Запись изменена");
-//		}
-//	}
 
 		public void update(MonthEvent eventR, MonthEvent eventA){
 			e1=eventR;
@@ -52,4 +39,11 @@ class EventList {
 		System.out.println("Запись изменена");
 		}
 	}
+//	public void update(MonthEvent monthEvent) {
+//		if (dayList == null) {
+//			dayList = new ArrayList<MonthEvent>();
+//		}
+//		dayList.remove(monthEvent);
+//		dayList.add(monthEvent);
+//	}
 }

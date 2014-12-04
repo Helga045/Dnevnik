@@ -9,8 +9,8 @@ class Dnevnic implements Dnevnik {
 	}
 
 	private Event e1, e2;
-	private DayEvent d;
-	private MonthEvent m;
+	private DayEvent d, d1, d2;
+	private MonthEvent m, m1, m2;
 	private EventList l;
 	private UUID uuid;
 	
@@ -39,6 +39,7 @@ class Dnevnic implements Dnevnik {
 		if(e1!=null & e2!=null){
 		uuid=e1.getID();
 		e2.setID(uuid);
+
 		d.update(e1, e2);
 		m.update(e1, e2);
 		l.update(e1, e2);
